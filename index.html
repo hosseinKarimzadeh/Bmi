@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/ico" href="./img/icons8-scale-64.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1>Body Mass Index Calculator(BMI)</h1>
+        </header>
+    </div>
+    <section>
+        <div class="inputs__group">
+            <input type="text" id="height" placeholder="Example: 170 cm" class="inputs__field" required>
+            <label class="inputs__label">Height (cm):</label>
+        </div>
+        <div class="inputs__group">
+            <input type="text" id="weight" placeholder="Example: 170 kg" class="inputs__field" required>
+            <label class="inputs__label">Weight (kg):</label>
+        </div>
+        <button class="button" onclick="getInputValue()">calculate</button>
+        <div id="result-box">
+            <p id="result"></p>
+            <p id="normal"></p>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
