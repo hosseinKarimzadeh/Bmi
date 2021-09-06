@@ -1,0 +1,195 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background-color: #dedede;
+                color: #273036;
+            }
+            
+            header {
+                padding: 20px;
+                color: #ddd;
+                text-align: center;
+                background-color: #273036;
+            }
+            
+            section {
+                background-color: #f1f1f1;
+                margin: 7.4rem 15.2rem 1rem;
+                padding: 50px;
+                text-align: center;
+                border-radius: 30px;
+                box-shadow: 0 0 12px rgb(219, 209, 209);
+            }
+            
+            .inputs__group {
+                position: relative;
+                padding: 15px 0 0;
+                margin: 10px 12vw 0;
+                width: 60%;
+            }
+            
+            .inputs__field {
+                font-family: inherit;
+                width: 100%;
+                border: 0;
+                border-bottom: 2px solid #9b9b9b;
+                outline: 0;
+                font-size: 1rem;
+                color: #273036;
+                padding: 7px 0;
+                background: transparent;
+                transition: border-color 0.2s;
+            }
+            
+            .inputs__field::placeholder {
+                color: transparent;
+            }
+            
+            .inputs__field:placeholder-shown~.inputs__label {
+                font-size: 1.3rem;
+                cursor: text;
+                top: 20px;
+            }
+            
+            .inputs__label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 1rem;
+                color: #9b9b9b;
+            }
+            
+            .inputs__field:focus {
+                padding-bottom: 6px;
+                font-weight: 700;
+                border-width: 3px;
+                border-image: linear-gradient(to right, #273036, #f1f1f1);
+                border-image-slice: 1;
+            }
+            
+            .inputs__field:focus~.inputs__label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 1rem;
+                color: #273036;
+                font-weight: 700;
+            }
+            
+            .inputs__field:required,
+            .inputs__field:invalid {
+                box-shadow: none;
+            }
+            
+            .button {
+                background-color: #f1f1f1;
+                color: #9b9b9b;
+                border: 2px solid #9b9b9b;
+                padding: 10px 32px;
+                text-align: center;
+                border-radius: 30px;
+                font-size: 20px;
+                margin: 30px 2px 20px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+            
+            .button:hover {
+                background-color: #273036;
+                color: #f1f1f1;
+                border: 2px solid #273036;
+            }
+            
+            p {
+                margin-bottom: 20px;
+            }
+            
+            @media screen and (min-width:1500px) {
+                .inputs__group {
+                    width: 70%;
+                }
+            }
+            
+            @media screen and (max-width:1200px) {
+                section {
+                    margin: 7.4rem 12.2rem 1rem;
+                }
+            }
+            
+            @media screen and (max-width:1024px) {
+                section {
+                    margin: 7.4rem 6.2rem 1rem;
+                }
+                .inputs__group {
+                    width: 70%;
+                }
+            }
+            
+            @media screen and (max-width:800px) {
+                * {
+                    font-size: 20px;
+                }
+                section {
+                    margin: 5.4rem 2rem 1rem;
+                }
+                .inputs__group {
+                    margin: 10px 2vw 0;
+                    width: 100%;
+                }
+                .inputs__field {
+                    font-family: inherit;
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 2px solid #9b9b9b;
+                    outline: 0;
+                    font-size: .8rem;
+                    color: #273036;
+                    padding: 7px 0;
+                    background: transparent;
+                    transition: border-color 0.2s;
+                }
+                .inputs__field::placeholder {
+                    color: transparent;
+                }
+                .inputs__field:placeholder-shown~.inputs__label {
+                    font-size: .8rem;
+                    cursor: text;
+                    top: 25px;
+                }
+                .inputs__label {
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    transition: 0.2s;
+                    font-size: .8rem;
+                    color: #9b9b9b;
+                }
+                .inputs__field:focus {
+                    padding-bottom: 6px;
+                    font-weight: 400;
+                    border-width: 3px;
+                    border-image: linear-gradient(to right, #273036, #f1f1f1);
+                    border-image-slice: 1;
+                }
+                .inputs__field:focus~.inputs__label {
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    transition: 0.2s;
+                    font-size: .7rem;
+                    color: #273036;
+                    font-weight: 700;
+                }
+                .inputs__field:required,
+                .inputs__field:invalid {
+                    box-shadow: none;
+                }
+                p {
+                    font-size: .9rem;
+                }
+            }
