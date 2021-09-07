@@ -9,9 +9,9 @@ function getInputValue() {
     } else if (weightVal === "" || isNaN(weightVal)) {
         result.innerHTML = "Provide a valid Weight!";
     } else {
-        let bmi = (weightVal / ((heightVal ** 2) / 10000)).toFixed(2);
-        let normal1 = Math.round(((heightVal ** 2) * 18.5) / 10000).toFixed(2);
-        let normal2 = Math.round(((heightVal ** 2) * 24.9) / 10000).toFixed(2);
+        let bmi = (weightVal / ((heightVal ** 2) / 10000)).toFixed(1);
+        let normal1 = Math.round(((heightVal ** 2) * 18.5) / 10000).toFixed(0);
+        let normal2 = Math.round(((heightVal ** 2) * 24.9) / 10000).toFixed(0);
         if (bmi < 18.5) {
             result.innerHTML = `Oops You are under weight : ${bmi}`;
             normal.innerHTML = `The ideal weight is between: ${normal1}kg - ${normal2}kg`;
